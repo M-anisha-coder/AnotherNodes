@@ -1,0 +1,17 @@
+{
+  "name": "nodeecho",
+  "version": "1.0.0",
+  "description": "Basic File Management using NodeJs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Manisha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
