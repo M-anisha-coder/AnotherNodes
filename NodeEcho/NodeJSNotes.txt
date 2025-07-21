@@ -1,0 +1,55 @@
+***Node terminologies*** 
+    Node JS :- JavaScript runtime environment, build on top of V8 engine.
+    V8 engine :- Engine with high performance and efficient excution of JS code in browser using C++ lang uage.
+    Client side :- Frontend where user intract using request.
+    Server Side :- Backend Where All business logic works and share response to client.
+    npm :- Package manager for nodeJS.
+    Package.json :- Have basic details of Node Projects and ensure to list of package with their version.
+    Package-lock.json :- Ensure brief details of every package installed like sub dependencies, version, store details.
+
+
+***Setting Up Backend environment***
+    1. Download & install NodeJS.
+    2. Download & install VSCode.
+    3. Download & install Postman.
+
+
+***SetUp Node Project***
+    1. Initializing empty node project using "npm init" which creates package.json file then run "npm install". 
+    2. Create a entrypoint file like Server.js
+    3. Install different type of modeules of node 
+        express :- JavaScript Web Framework for NodeJS, used to build Web Application & APIs.
+        nodemon :- Tool to restart server after any changes finds.
+
+
+
+
+***Some extra Doses***
+4 ways to run JS
+    1. Online Compliers
+    2. Inspect in Web browser
+    3. Terminal
+    4. VSCode   
+     
+***functions in JS***
+    1. filter function :- in below result will store the items which are more than 12 in age array.
+        const  age =[22,46,26]
+        const result = age.filter(checkage);
+        function checkage (age){
+            return age >=12;
+        }
+    2. Callback function :- function called by any other function after completeing its on work.
+        1. Method 1
+            function add(a,b){
+                return a+b;
+            }
+        2. Method 2
+            var add = function(a,b){
+                return a+b;
+            }
+        3. Method 3(arrow function)
+            var add = (a,b)=>{ return a+b; };
+        4. Method 4 (only if function execute only one line)
+            var add =(a,b)=>a+b;
+
+
