@@ -6,8 +6,13 @@
     npm :- Package manager for nodeJS.
     Package.json :- Have basic details of Node Projects and ensure to list of package with their version.
     Package-lock.json :- Ensure brief details of every package installed like sub dependencies, version, store details.
+    JSON(JavaScript Object Notation) :- lightweight and structure organised data format,represented as string, easy to transfer.
+    API (Application Programming interface) :- is a set of protocols and tools that allow different software applications to communicate with each other.
+    End Point :-
 
 
+
+    
 ***Setting Up Backend environment***
     1. Download & install NodeJS.
     2. Download & install VSCode.
@@ -20,6 +25,9 @@
     3. Install different type of modeules of node 
         express :- JavaScript Web Framework for NodeJS, used to build Web Application & APIs.
         nodemon :- Tool to restart server after any changes finds.
+        dotenv :- To store sensitive information in .env file.
+        lodash :- Array handling tool (Optional) if you are dealing with array and object  then install.
+    4. start writing code.
 
 
 
