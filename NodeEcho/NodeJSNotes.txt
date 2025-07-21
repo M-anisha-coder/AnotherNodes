@@ -1,4 +1,4 @@
-***Node terminologies*** 
+*********************Node Terminologies**************************************
     Node JS :- JavaScript runtime environment, build on top of V8 engine.
     V8 engine :- Engine with high performance and efficient excution of JS code in browser using C++ lang uage.
     Client side :- Frontend where user intract using request.
@@ -8,18 +8,16 @@
     Package-lock.json :- Ensure brief details of every package installed like sub dependencies, version, store details.
     JSON(JavaScript Object Notation) :- lightweight and structure organised data format,represented as string, easy to transfer.
     API (Application Programming interface) :- is a set of protocols and tools that allow different software applications to communicate with each other.
-    End Point :-
-
-
-
-    
-***Setting Up Backend environment***
+    End Point :- An endpoint is a URL path on a server that accepts requests from a client and returns a response. 
+--------------------------------------------------------------------------------------------------------------
+*************Setting Up Backend environment**********************
     1. Download & install NodeJS.
     2. Download & install VSCode.
     3. Download & install Postman.
+    4. Download & install MongoDB,mongo shell & MongoDB compass.
+--------------------------------------------------------------------
 
-
-***SetUp Node Project***
+*************************SetUp Node Project*****************************
     1. Initializing empty node project using "npm init" which creates package.json file then run "npm install". 
     2. Create a entrypoint file like Server.js
     3. Install different type of modeules of node 
@@ -28,18 +26,22 @@
         dotenv :- To store sensitive information in .env file.
         lodash :- Array handling tool (Optional) if you are dealing with array and object  then install.
     4. start writing code.
+---------------------------------------------------------------------------
 
-
-
-
-***Some extra Doses***
+********************Some extra Doses*******************
 4 ways to run JS
     1. Online Compliers
     2. Inspect in Web browser
     3. Terminal
     4. VSCode   
+REST API function
+    1. GET (retrieve a record)
+    2. PUT (update a record)
+    3. DELETE (delete the record)
+    4. POST (create a record)
+    Note: Its main feature is that REST API is stateless, i.e., the servers do not save clients' data between requests.
      
-***functions in JS***
+functions in JS
     1. filter function :- in below result will store the items which are more than 12 in age array.
         const  age =[22,46,26]
         const result = age.filter(checkage);
@@ -59,5 +61,35 @@
             var add = (a,b)=>{ return a+b; };
         4. Method 4 (only if function execute only one line)
             var add =(a,b)=>a+b;
+-----------------------------------------------------------------------------
+**********MongoDB Basics******************
+SQL       |  MongoDB
+Database  |  Database
+Table     |  Collection
+Row       |  Document
+Column    |  Field
+-------------------------------------------
+************mongo commands************************
+1. Show all databases
+    show databases
+2. To switch to a specific database or create:
+    use <Database Name>;
+3. To list all collections in the current database:
+    show collections;
+4. create a collection
+    db.createCollection(<TableName>);
+5. To insert one or many document into a collection:
+    db.<TableName>.insertOne(<object>); 
+    db.<TableName>.insertMany(<Multipleobject>); 
+6. To find documents in  collection:
+    db.<TableName>.find();
+    db.<TableName>.findOne(); 
+7. To update a document in a collection:
+    db.<TableName>.updateOne({name: "John"}, {$set: {age: 31}});
+    db.<TableName>.updateMany({name: "John"}, {$set: {age: 31}});
+8. To delete a document from a collection:
+    db.<TableName>.deleteOne({ field: value });
+    db.<TableName>.deleteMany({ field: value });
+--------------------------------------------------------------------
 
 
