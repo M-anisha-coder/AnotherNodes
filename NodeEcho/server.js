@@ -1,12 +1,18 @@
 import express from 'express';
 import dotenv from 'dotenv';
+//import {DB} from './DB/db.js';
 const app =express();
 dotenv.config();
 const port=process.env.PORT || 3000;
 
-import {AuthorName,createFile} from './Utilities/FileSystem.js';
-var Name =AuthorName;
-createFile("Hello "+ Name);
+// export-import example
+// import {AuthorName,createFile} from './Utilities/FileSystem.js';
+// var Name =AuthorName;
+// createFile("Hello "+ Name);
+
+
+
+
 
 app.get("/api/v1/",(req,res)=>{
     res.send("TODO-LIST WorkShop");

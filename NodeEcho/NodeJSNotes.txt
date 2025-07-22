@@ -9,6 +9,8 @@
     JSON(JavaScript Object Notation) :- lightweight and structure organised data format,represented as string, easy to transfer.
     API (Application Programming interface) :- is a set of protocols and tools that allow different software applications to communicate with each other.
     End Point :- An endpoint is a URL path on a server that accepts requests from a client and returns a response. 
+    Mongoose :- Object Data Modeling (ODM) library,Mongoose manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+    
 --------------------------------------------------------------------------------------------------------------
 *************Setting Up Backend environment**********************
     1. Download & install NodeJS.
