@@ -1,0 +1,22 @@
+{
+  "name": "zentasker",
+  "version": "1.0.0",
+  "description": "Zentasker is a modern, minimalist task management app designed to bring clarity and calm to your daily workflow.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "M-anisha-coder",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^17.2.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  }
+}
