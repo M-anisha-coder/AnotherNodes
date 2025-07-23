@@ -1,13 +1,23 @@
-import './config.js';
-// import express from 'express';
-// const app = express();
-// const port = process.env.PORT || 3000;
-
 //------Method 1 Use DB.js File and import it
-import connectDB from"./DB/db.js";
-connectDB();
+import './config.js';  // Load environment variables first
+import app from './app.js';
+import connectDB from "./DB/db.js";
+const port = process.env.PORT || 3000;
+connectDB()
+    .then(() => {
+        app.listen(port, () => {
+            console.log(`server is running at Port : ${port}`);
+        });
+        app.on('error', (err) => {
+            console.error("Server is not able to connect with database error :", err);
+        });
+    })
+    .catch((err) => {
+        console.error("Failed to connect :", err.message);
+    })
 
-//------Method 2 To connecting with DB-------------------
+//--------------------------------------------------------------------------------------
+//------Method 2 To connecting with DB----------------------------------------------
 
 // if (!process.env.MONGODBURL) {
 //     throw new Error("Missing MONGODBURL in environment variables");
@@ -35,65 +45,6 @@ connectDB();
 //     }
 
 // })();
-//-----------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// app.get("/api/v1/",(req,res)=>{
-//     res.send("TODO-LIST WorkShop");
-// });
-
-// app.get("/api/v1/TodoList",(req,res)=>{
-//     var todo={
-//         Title:"Docker Workshop",
-//         Content :"Learn building about images.",
-//         keyword:["docker","Images","Containers"]
-//     }
-//     res.json(todo);
-// });
-
-// app.listen(port,()=>{
-//     console.log(`server is running at https://localhost:${port}/api/v1`);
-// });
+//---------------------------------------------------------------------------------
 
 
