@@ -28,9 +28,21 @@ const UserSchema = new Schema({
         type: String,
         required: true,
         trim: true,
-        lowercase: true
     },
-    
+    avatar: {
+        type: String,
+        required: true,
+    },
+    coverimage: {
+        type: String,
+    },
+    watchHistory: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Video'
+    }],
+    refreshToken: {
+        type: String
+    }
 
 }, { timestamps: true });
 
